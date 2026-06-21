@@ -1,32 +1,41 @@
-import React, { useEffect, useState } from "react";
+import React, { useContext, useEffect, useState } from "react";
 import Login from "./components/Auth/Login";
 import EmployeeDashBroad from "./components/Dashbroad/EmployeeDashBroad";
 import AdminDashbroad from "./components/Dashbroad/AdminDashbroad";
 import { getLocalStorage, setLocalStorage } from "./utils/localStorage";
+import { AuthContext } from "./context/AuthProvider";
+import AuthProvider from "./context/AuthProvider";
 
 const App = () => {
-  const [user, setUser] = useState(null);
+  const [user, setUser] = useState(null)
+
+  const AuthData = useContext(AuthContext)
+  console.log(AuthData)
+    
 
   const handleLogin = (email, password) => {
-    if (email == "krishit@gmial.com" && password == "123") {
-      console.log("this is admin");
-    } else if (email == "user.com" && password == "123") {
-      console.log("this is user");
+    if (email == "krishit@gmail.com" && password == "123") {
+      setUser('admin')
+    } else if (AuthData && AuthData.employees.find((e) =>email ==  e.email && e.password == password)) {
+      setUser('employee')
     } else {
       alert("Invalid credentials");
     }
   };
 
-  useEffect(() => {
-    setLocalStorage();
-  });
-  useEffect(() => {
-    getLocalStorage();
-  });
+  
+
+  // useEffect(() => {
+  //   setLocalStorage();
+  // });
+  // useEffect(() => {
+  //   getLocalStorage();
+  // });
 
   return (
     <>
       {!user ? <Login handleLogin={handleLogin} /> : ""}
+      {user == 'admin' ? <AdminDashbroad />: <EmployeeDashBroad />}
       {/* <EmployeeDashBroad /> */}
       {/* <AdminDashbroad /> */}
     </>
