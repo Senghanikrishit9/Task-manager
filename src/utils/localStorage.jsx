@@ -1,192 +1,135 @@
 const employees = [
   {
     id: 1,
+    firstName: "Rahul",
     email: "employee1@gmail.com",
     password: "123",
-    tasks: [
-      {
-        active: true,
-        newTask: true,
-        completed: false,
-        failed: false,
-        taskTitle: "Design Login Page",
-        taskDescription: "Create a responsive login page using React and Tailwind CSS.",
-        taskDate: "2026-06-15",
-        category: "Frontend"
-      },
-      {
-        active: false,
-        newTask: false,
-        completed: true,
-        failed: false,
-        taskTitle: "Fix Navbar Bug",
-        taskDescription: "Resolve mobile navigation menu issue.",
-        taskDate: "2026-06-12",
-        category: "Bug Fix"
-      },
-      {
-        active: false,
-        newTask: false,
-        completed: false,
-        failed: true,
-        taskTitle: "API Integration",
-        taskDescription: "Connect login form with backend API.",
-        taskDate: "2026-06-10",
-        category: "Backend"
-      }
-    ]
+    taskNumber: {
+      active: 1,
+      newTask: 1,
+      completed: 1,
+      failed: 1
+    }
   },
-
   {
     id: 2,
+    firstName: "Priya",
     email: "employee2@gmail.com",
     password: "123",
-    tasks: [
-      {
-        active: true,
-        newTask: true,
-        completed: false,
-        failed: false,
-        taskTitle: "Create Dashboard UI",
-        taskDescription: "Build employee dashboard with cards and charts.",
-        taskDate: "2026-06-15",
-        category: "Frontend"
-      },
-      {
-        active: true,
-        newTask: false,
-        completed: false,
-        failed: false,
-        taskTitle: "Add Search Feature",
-        taskDescription: "Implement search functionality in task list.",
-        taskDate: "2026-06-16",
-        category: "Feature"
-      },
-      {
-        active: false,
-        newTask: false,
-        completed: true,
-        failed: false,
-        taskTitle: "Setup Routing",
-        taskDescription: "Configure React Router in application.",
-        taskDate: "2026-06-11",
-        category: "React"
-      }
-    ]
+    taskNumber: {
+      active: 2,
+      newTask: 1,
+      completed: 1,
+      failed: 0
+    }
   },
-
   {
     id: 3,
+    firstName: "Aarav",
     email: "employee3@gmail.com",
     password: "123",
-    tasks: [
-      {
-        active: true,
-        newTask: true,
-        completed: false,
-        failed: false,
-        taskTitle: "Create Employee Form",
-        taskDescription: "Develop employee registration form.",
-        taskDate: "2026-06-15",
-        category: "Frontend"
-      },
-      {
-        active: false,
-        newTask: false,
-        completed: true,
-        failed: false,
-        taskTitle: "Validate Inputs",
-        taskDescription: "Add validation to all form fields.",
-        taskDate: "2026-06-13",
-        category: "Validation"
-      },
-      {
-        active: false,
-        newTask: false,
-        completed: false,
-        failed: true,
-        taskTitle: "Optimize Images",
-        taskDescription: "Reduce image sizes for better performance.",
-        taskDate: "2026-06-09",
-        category: "Performance"
-      }
-    ]
+    taskNumber: {
+      active: 1,
+      newTask: 1,
+      completed: 1,
+      failed: 1
+    }
   },
-
   {
     id: 4,
+    firstName: "Ananya",
     email: "employee4@gmail.com",
     password: "123",
-    tasks: [
-      {
-        active: true,
-        newTask: true,
-        completed: false,
-        failed: false,
-        taskTitle: "Build Profile Page",
-        taskDescription: "Create employee profile management page.",
-        taskDate: "2026-06-15",
-        category: "Frontend"
-      },
-      {
-        active: true,
-        newTask: false,
-        completed: false,
-        failed: false,
-        taskTitle: "Dark Mode Support",
-        taskDescription: "Implement dark mode throughout app.",
-        taskDate: "2026-06-18",
-        category: "UI/UX"
-      },
-      {
-        active: false,
-        newTask: false,
-        completed: true,
-        failed: false,
-        taskTitle: "Footer Component",
-        taskDescription: "Create reusable footer component.",
-        taskDate: "2026-06-12",
-        category: "Component"
-      }
-    ]
+    taskNumber: {
+      active: 2,
+      newTask: 1,
+      completed: 1,
+      failed: 0
+    }
   },
-
   {
     id: 5,
+    firstName: "Vikram",
     email: "employee5@gmail.com",
     password: "123",
-    tasks: [
-      {
-        active: true,
-        newTask: true,
-        completed: false,
-        failed: false,
-        taskTitle: "Setup Authentication",
-        taskDescription: "Implement login and logout functionality.",
-        taskDate: "2026-06-15",
-        category: "Authentication"
-      },
-      {
-        active: false,
-        newTask: false,
-        completed: true,
-        failed: false,
-        taskTitle: "Create Context API",
-        taskDescription: "Manage global state using Context API.",
-        taskDate: "2026-06-14",
-        category: "React"
-      },
-      {
-        active: false,
-        newTask: false,
-        completed: false,
-        failed: true,
-        taskTitle: "Deploy Project",
-        taskDescription: "Deploy application to Netlify.",
-        taskDate: "2026-06-08",
-        category: "Deployment"
-      }
-    ]
+    taskNumber: {
+      active: 1,
+      newTask: 1,
+      completed: 1,
+      failed: 1
+    }
+  },
+  {
+    id: 6,
+    firstName: "Rohan",
+    email: "employee6@gmail.com",
+    password: "123",
+    taskNumber: {
+      active: 3,
+      newTask: 2,
+      completed: 4,
+      failed: 1
+    }
+  },
+  {
+    id: 7,
+    firstName: "Kavya",
+    email: "employee7@gmail.com",
+    password: "123",
+    taskNumber: {
+      active: 2,
+      newTask: 1,
+      completed: 5,
+      failed: 0
+    }
+  },
+  {
+    id: 8,
+    firstName: "Arjun",
+    email: "employee8@gmail.com",
+    password: "123",
+    taskNumber: {
+      active: 4,
+      newTask: 2,
+      completed: 3,
+      failed: 1
+    }
+  },
+  {
+    id: 9,
+    firstName: "Sneha",
+    email: "employee9@gmail.com",
+    password: "123",
+    taskNumber: {
+      active: 1,
+      newTask: 1,
+      completed: 6,
+      failed: 0
+    }
+  },
+  {
+    id: 10,
+    firstName: "Aditya",
+    email: "employee10@gmail.com",
+    password: "123",
+    taskNumber: {
+      active: 5,
+      newTask: 3,
+      completed: 2,
+      failed: 1
+    }
+  },
+  {
+    id: 11,
+    firstName: "Ishita",
+    email: "employee11@gmail.com",
+    password: "123",
+    taskNumber: {
+      active: 2,
+      newTask: 1,
+      completed: 4,
+      failed: 2
+    }
   }
 ];
 

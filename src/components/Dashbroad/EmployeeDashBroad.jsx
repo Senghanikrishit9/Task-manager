@@ -4,13 +4,12 @@ import Tasknumber from '../other/Tasknumber'
 import Tasklistnumber from '../Tasklist/Tasklistnumber'
 
 const EmployeeDashBroad = ({data}) => {
-  console.log(data)
   return (
     <div>
     <div className='p-10 bg-[#1c1c1c] h-screen'>
-      <Header />
-      <Tasknumber />
-      <Tasklistnumber />
+      <Header data={data}  />
+      <Tasknumber data={data} />
+      <Tasklistnumber data={data} />
     </div>
     </div>
   )
