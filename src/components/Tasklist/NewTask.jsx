@@ -1,9 +1,9 @@
 import React from 'react'
 
-const NewTask = () => {
+const NewTask = ({task}) => {
   return (
     <div>
-      <div className='h-full w-80 shrink-0 p-5 bg-green-400 rounded-xl'>
+      <div className='h-full w-80 shrink-0 p-5 bg-red-400 rounded-xl'>
           <div className='flex justify-between items-center'>
             <h3 className='bg-red-600 px-3 py-1 rounded font-semibold '>High</h3>
             <h4 className='font-semibold'>21 March 2025</h4>

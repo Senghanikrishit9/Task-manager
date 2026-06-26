@@ -1,6 +1,6 @@
 import React from 'react'
 
-const CompleteTask = () => {
+const CompleteTask = ({task}) => {
   return (
     <div>
        <div className='h-full w-80 shrink-0 p-5 bg-yellow-400 rounded-xl'>

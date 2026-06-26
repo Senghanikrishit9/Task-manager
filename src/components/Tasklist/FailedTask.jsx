@@ -1,6 +1,6 @@
 import React from 'react'
 
-const FailedTask = () => {
+const FailedTask = ({task}) => {
   return (
     <div>
         <div className='h-full w-80 shrink-0 p-5 bg-blue-400 rounded-xl'>
